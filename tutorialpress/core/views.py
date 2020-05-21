@@ -1,12 +1,7 @@
-from rest_framework import serializers, viewsets
+from rest_framework import viewsets
 
 from tutorialpress.core.models import Publicacao
-
-
-class PublicacaoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Publicacao
-        fields = ["id", "titulo", "conteudo", "is_publicada"]
+from tutorialpress.core.serializers import PublicacaoSerializer
 
 
 class PublicacaoViewSet(viewsets.ModelViewSet):
