@@ -8,6 +8,7 @@ authors = ["Marco André Mendes <marcoandre@gmail.com>"]
 python = "^3.6.1"
 django = "^3.0.6"
 djangorestframework = "^3.11.0"
+drf-yasg = "^1.17.1"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

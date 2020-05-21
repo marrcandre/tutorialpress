@@ -14,5 +14,5 @@ class PublicacaoViewSet(viewsets.ModelViewSet):
     serializer_class = PublicacaoSerializer
 
 
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
 router.register("publicacoes", PublicacaoViewSet)
